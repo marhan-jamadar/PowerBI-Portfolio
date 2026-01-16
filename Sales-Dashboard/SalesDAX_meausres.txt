@@ -1,0 +1,23 @@
+1️⃣ Total Revenue
+Total Revenue =
+SUM ( Sales[Revenue] )
+
+2️⃣ Total Profit
+Total Profit =
+SUM ( Sales[Profit] )
+
+3️⃣ Total Orders
+Total Orders =
+DISTINCTCOUNT ( Sales[OrderID] )
+
+4️⃣ Return Rate (%)
+Return Rate (%) =
+DIVIDE (
+    COUNT ( Returns[OrderID] ),
+    DISTINCTCOUNT ( Sales[OrderID] ),
+    0
+)
+
+5️⃣ Total Customers
+Total Customers =
+DISTINCTCOUNT ( Customers[CustomerKey] )
