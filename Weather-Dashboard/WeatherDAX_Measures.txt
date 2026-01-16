@@ -1,0 +1,15 @@
+1️⃣ Average Temperature
+Avg Temperature =
+AVERAGE ( Weather[Temperature] )
+
+2️⃣ Average Humidity
+Avg Humidity =
+AVERAGE ( Weather[Humidity] )
+
+3️⃣ Average Wind Speed
+Avg Wind Speed =
+AVERAGE ( Weather[Wind_Speed] )
+
+4️⃣ Average Visibility
+Avg Visibility =
+AVERAGE ( Weather[Visibility] )
