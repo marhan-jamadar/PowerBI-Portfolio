@@ -1,5 +1,5 @@
 # PowerBI-Portfolio
-Portfolio of Power BI dashboards and data analytics projects
+📈 Portfolio of Power BI dashboards and data analytics projects
 
 # Power BI Portfolio – [Marhan Jamadar]
 Power BI Developer | Data Analyst | SAP Datasphere Enthusiast
