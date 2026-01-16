@@ -1,0 +1,42 @@
+1️⃣ Total Employees
+Total Employees =
+DISTINCTCOUNT ( Employees[Employee_ID] )
+
+2️⃣ Active Employees
+Active Employees =
+CALCULATE (
+    [Total Employees],
+    Employees[Status] = "Active"
+)
+
+3️⃣ Resigned Employees
+Resigned Employees =
+CALCULATE (
+    [Total Employees],
+    Employees[Status] = "Resigned"
+)
+
+4️⃣ Attrition Rate % (Very Important for HR Roles)
+Attrition Rate % =
+DIVIDE (
+    [Resigned Employees],
+    [Total Employees],
+    0
+)
+
+5️⃣ Average Performance Rating
+Avg Performance Rating =
+AVERAGE ( Employees[Performance_Rating] )
+
+ 6️⃣Attrition Rate by Year
+Attrition Rate YoY =
+DIVIDE (
+    CALCULATE (
+        [Resigned Employees],
+        YEAR ( Employees[Exit_Date] )
+    ),
+    CALCULATE (
+        [Total Employees],
+        YEAR ( Employees[Hire_Date] )
+    )
+)
